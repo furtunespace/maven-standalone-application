@@ -42,7 +42,17 @@
 		<tag>HEAD</tag>
 		<url>https://github.com/MithunTechnologiesDevOps/maven-standalone-application</url>
 	</scm>
-
+	<distributionManagement>
+        	<repository>
+      			<id>nexus</id>
+      			<name>webapp-releases</name>
+      			<url>http://13.232.168.30:8081/nexus/content/repositories/webapp/</url>
+      		</repository>
+    		<snapshotRepository>
+      			<name>webapp-snapshots</name>
+      			<url>http://13.232.168.30:8081/nexus/content/repositories/webapp-snapshots/</url>
+          	</snapshotRepository>
+	</distributionManagement>
 	<issueManagement>
 		<system>GitHub</system>
 		<url>https://github.com/MithunTechnologiesDevOps/maven-standalone-application/issues</url>
